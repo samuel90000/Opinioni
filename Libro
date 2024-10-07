@@ -13,6 +13,6 @@ class Libro:
     def toString(self):
         return "autore: " + self.autore + ", anno: " + str(self.anno)
 
-libro = Libro("La divina Commedia", "1306", "Dante Alighieri")
+libro = Libro("La divina Commedia", "Dante Alighieri", "1306")
 print(libro.toString())
 print(libro.get_titolo())
