@@ -1,0 +1,18 @@
+class Libro:
+    def __init__(self, titolo, autore, anno):
+        self.titolo = titolo
+        self.autore = autore
+        self.anno = anno
+
+    def get_titolo(self):
+        return self.titolo
+
+    def set_titolo(self, titolo):
+        self.titolo = titolo
+
+    def toString(self):
+        return "autore: " + self.autore + ", anno: " + str(self.anno)
+
+libro = Libro("La divina Commedia", "1306", "Dante Alighieri")
+print(libro.toString())
+print(libro.get_titolo())
