@@ -3,16 +3,19 @@ class Libro:
         self.titolo = titolo
         self.autore = autore
         self.anno = anno
-
     def get_titolo(self):
         return self.titolo
-
     def set_titolo(self, titolo):
         self.titolo = titolo
-
+    def get_autore(self):
+        return self.autore
+    def set_autore(self, autore):
+        self.autore = autore
+    def get_anno(self):
+        return self.anno
+    def set_anno(self, anno):
+        self.anno = anno
     def toString(self):
-        return "autore: " + self.autore + ", anno: " + str(self.anno)
-
+        return f"autore: {self.autore}, titolo: {self.titolo}, anno: {self.anno}"
 libro = Libro("La divina Commedia", "Dante Alighieri", "1306")
 print(libro.toString())
-print(libro.get_titolo())
