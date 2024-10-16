@@ -28,14 +28,14 @@ class Magazzino:
             writer = csv.writer(csvfile)
             writer.writerow(["Nome", "Prezzo €", "Quantità"])
             for prodotto in self.prodotti:
-                writer.writerow([prodotto.nome, str(prodotto.prezzo), str(prodotto.quantita)])
+                writer.writerow([prodotto.nome, prodotto.prezzo, prodotto.quantita])
     def mostra_prodotti(self):
         if not self.prodotti:
             print("Il magazzino è vuoto.")
             return
         print("Prodotti nel magazzino:")
         for prodotto in self.prodotti:
-            print(f"Nome: {prodotto.nome}, Prezzo: {prodotto.prezzo:.2f} €, Quantità: {prodotto.quantita}")
+            print(f"Nome: {prodotto.nome}, Prezzo: {prodotto.prezzo} €, Quantità: {prodotto.quantita}")
 if __name__ == "__main__":
     magazzino = Magazzino()
     p1 = Prodotto(nome="Maglietta", prezzo=15.99, quantita=50)
